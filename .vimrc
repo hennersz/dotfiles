@@ -92,6 +92,7 @@ call vundle#end()    " required
     let g:syntastic_check_on_open = 1
     let g:syntastic_check_on_wq = 0
     let g:syntastic_javascript_checkers = ['eslint']
+    let g:syntastic_java_javac_config_file_enabled = 1
 "let g:jsx_ext_required = 0 "Allow JSX in normal JS files
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -199,7 +200,9 @@ if !exists(":DiffOrig")
 endif
 
 syntax on
+set background=dark
 colorscheme solarized
+
 
 " cool status bar
 set ls=2
@@ -222,3 +225,4 @@ set statusline+=%-2c\     " column number
 set statusline+=%-4L      " total line count
 set statusline+=\ %3p%%\  " percentage progress thru file
 
+let mapleader=","
