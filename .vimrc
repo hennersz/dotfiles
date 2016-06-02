@@ -13,7 +13,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'jelera/vim-javascript-syntax'
+Plugin 'pangloss/vim-javascript'
 
 Plugin 'digitaltoad/vim-jade'
 
@@ -81,6 +81,12 @@ Plugin 'freitass/todo.txt-vim'
 " Use :Ag to search the project. o to open, go to preview, q to close
 " quickfix window.
 Plugin 'vim-scripts/ag.vim'
+
+Plugin 'alvan/vim-closetag'
+
+Plugin 'derekwyatt/vim-scala'
+
+Plugin 'powerline/powerline'
 " All of your Plugins must be added before the following line
 call vundle#end()    " required
     set statusline+=%#warningmsg#
@@ -226,3 +232,9 @@ set statusline+=%-4L      " total line count
 set statusline+=\ %3p%%\  " percentage progress thru file
 
 let mapleader=","
+
+"auto expand paired brackets with newline
+inoremap {<CR> {<CR>}<esc><up>o
+inoremap [<CR> [<CR>]<esc><up>o
+inoremap (<CR> (<CR>)<esc><up>o
+inoremap {{ {{}}<left><left>
