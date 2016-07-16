@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/henrymortimer/.dotfiles/oh-my-zsh
+export ZSH=~/.dotfiles/oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -83,3 +83,6 @@ source ~/.locals.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export TERM=xterm-256color
+eval `dircolors ~/.dirColors/dircolors.256dark`

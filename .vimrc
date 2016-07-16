@@ -238,3 +238,5 @@ inoremap {<CR> {<CR>}<esc><up>o
 inoremap [<CR> [<CR>]<esc><up>o
 inoremap (<CR> (<CR>)<esc><up>o
 inoremap {{ {{}}<left><left>
+
+let g:ycm_confirm_extra_conf = 0
